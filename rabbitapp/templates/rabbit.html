@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Random Number: {{ value }}
+</h1>
+<div>
+<table id="random_table">
+    <tr>
+    <th>Id</th>
+    <th>Datatime</th>
+    <th>Random Number</th> 
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>{{ datetime }}</td>
+    <td>{{ value }}</td> 
+  </tr>
+</table>
+</div>
+{% endblock %}
+
